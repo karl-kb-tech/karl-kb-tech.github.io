@@ -1,14 +1,90 @@
+<!DOCTYPE html>
+ 
 <html>
   
   <head>
-    <title>My blog</title>
-    <link href=“styles/main.css” rel=“stylesheet” type=“text/css” />
+    <title>Karls Dev Blog</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <Style>
+      #menu-text {
+        color: black;
+      }
+    </Style>
   </head>
 
   <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+  <div>
+    <div class="container-fluid">
+
+        <div class="container-fluid title-bg-color">
+            <div class="row">
+              <div class="col-6">
+                <img src="images/k.gif" class="float-left" alt="K" width="90px" height="auto" />
+                <h1>Karls Dev Blog </h1>
+            
+              </div>
+              <div class="col-6">
+                <h2 class="text-color float-right">
+
+                  <button type="button" class="btn is-primary">
+                  <a href="index.html" id="menu-text">Home</a>
+                </button>
+
+              <div class="dropdown">
+                <button type="button" class="btn">
+                    Technical
+                </button>
+                <div class="dropdown-content">
+                    <a href="blog/sprint1-technical.html">Sprint-1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>  
+              </div>
+
+                <div class="dropdown">
+                  <button type="button" class="btn">Core</button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </h2>
+              </div>
+            </div>
+          </div> 
+    <section class="container with-title">
+      <div class="container-fluid">
+        <div class="container page-bg-color with-title is-center">
+          <p class="title">Kia ora Taiao!</p> 
+          <p> This blog will showcase my journey through my time at EDA</p>
+          <p> It will contain links to blogposts relating to the sprints we have done, and hopefully some useful information for anyone following along</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container is-rounded container-fluid">
+        <p class="page-bg-color">So you know who you will be working with I better post some photos:
+          
+          <img src="images/bats.jpg" alt="Lego Batman and me!"  height="auto" width="320x">
+        </p>
+      </div>
+    <div class="container is-rounded container-fluid float-right">
+      <img src="images/div.jpg" alt="Diving in Thailand" height="auto" width="360px" class="float-left page-bg-color">
+      <p class="page-bg-color">
+        The warm waters of Phuket, learning to dive.
+        Also learning to float and sink using my breath.
+        Then getting dumped into an advanced course on our last day!
+      
+        If the theme hasn't given it away but I might be a bit of a gamer, and big nerd.
+        Not sure about the font...but it's better than comic-sans I guess?
+        Anyways looking forward to working with everyone!
+      </p>
+    </div>
+
+  </div>
   </body>
 
 </html>
