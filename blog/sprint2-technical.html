@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ 
+<html>
+  
+  <head>
+    <title>Class and ID's:</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+    <Style>
+      #title-text {
+        color: blue;
+      }
+    </Style>
+  </head>
+
+  <body>
+  <div>
+    <div class="container-fluid">
+
+        <div class="container-fluid title-bg-color">
+            <div class="row">
+              <div class="col-6">
+                <img src="../images/k.gif" class="float-left" alt="K" width="90px" height="auto" />
+                <h1>Karls Dev Blog </h1>
+            
+              </div>
+              <div class="col-6">
+                <h2 class="text-color float-right">
+
+                  
+                  <a href="../../karl-kb-tech.github.io/index.html" id="menu-text" class="btn is-primary">Home</a>
+                
+
+              <div class="dropdown">
+                <button type="button" class="btn">
+                    Technical
+                </button>
+                <div class="dropdown-content">
+                    <a href="../blog/sprint2-technical.html">Sprint-2</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>  
+              </div>
+
+                <div class="dropdown">
+                  <button type="button" class="btn">Core</button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </h2>
+              </div>
+            </div>
+          </div>
+        <section class="container with-title">
+          <div class="container-fluid">
+            <div class="container page-bg-color with-title is-center">
+              <p class="title" id="title-text">
+                Best practices associated with class vs id:
+              </p>
+              <p class="page-bg-color" >
+                When I frist started looking at the best use of class versus id in css I was a little bit confused...like why can't I use the id's I define anywhere I want?
+                And what does class have to do with this, isn't that something you are born with? Apparently not.
+                A class within css is like a keyword or group of keywords that can be used to tag different html properties, ocne this has been done a set of rules or definitions is then
+                applied to that tagged piece of html.
+              </p>
+            </div>
+          </div>
+        </section>
+      <div class="container is-rounded container-fluid float-left">
+        <p class="page-bg-color">
+          Then I learned id's work similar to class - a keyword that then applies a set of rules to whatever html element it is tagged to, except an id can only be used once whereas a class can be
+          applied many times.
+          So why can't I use them interchangeably? Well the reason is that your code will fail any validation test if it finds an id has been used more than once.
+          The way I started to think about them is an id is like your passport or drivers license it is unique to you and no one else has that (unless you have been victim to identity theft).
+          Class is subjective and something everyone can have, which is why class can apply to multiple html elements but id is unique to only one.
+        </p>
+      </div>
+
+      <div class="container is-rounded container-fluid float-right">
+        <p class="page-bg-color">
+          <code>
+              .page-bg-color {
+                background-color: #b2b4b2;
+            }
+          </code>
+          This line of code line is how a class is defined in css, notice the keywords I have chosen begin with the "." - this is what makes it a class.
+          <code>
+              #title-text {
+                color: blue;
+              }
+          </code>
+          This is how you define an id in css, notice the "#" at the begining - again this is what makes it an id.
+          Now if you were to see these in action, tagging an html element you would find the following, as you can see the class and id have both been applied to the paragraph tag (without the # or .):
+          <img src="../images/Screenshot.png" class="align-bottom" alt="id & class example">
+        </p>
+      </div>
+
+</html>
