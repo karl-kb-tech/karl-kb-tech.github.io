@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+ 
+<html>
+  
+  <head>
+        <title>Sprint 3 Technical</title>
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" type="text/css" />
+        <Style>
+            #menu-text {
+                color: black;
+            }
+        </Style>
+    </head>
+
+    <body>
+        <div>
+            <div class="container-fluid">
+
+                <div class="container-fluid title-bg-color">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="../images/k.gif" class="float-left" alt="K" width="90px" height="auto" />
+                        <h1>Karls Dev Blog </h1>
+                    
+                    </div>
+                <div class="row">
+                    <div class="col-6">
+                            <h2 class="text-color float-right">
+
+                            <a href="../../karl-kb-tech.github.io/index.html" id="menu-text" class="btn is-primary">Home</a>
+
+                        <div class="dropdown">
+                            <button type="button" class="btn">
+                                Technical
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="../blog/sprint2-technical.html">Sprint-2</a>
+                                <a href="../blog/sprint3-technical.html">Sprint-3</a>
+                                <a href="#">Link 3</a>
+                            </div>  
+                        </div>
+
+                            <div class="dropdown">
+                            <button type="button" class="btn">Core</button>
+                            <div class="dropdown-content">
+                                <a href="../blog/sprint1-cultural.html">Sprint 1 Cultural</a>
+                                <a href="../blog/sprint2-cultural.html">Sprint 2 Cultural</a>
+                                <a href="../blog/sprint3-cultural.html">Sprint 3 Cultural</a>
+                        </div>
+                    </div>
+                </div>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <section class="container with-title">
+                <div class="container-fluid">
+                  <div class="container page-bg-color with-title is-center">
+                    <p class="title">An analogy to describe the differences between HTML and CSS:</p> 
+                    <p> HTML is the content of the page and by itself can be reasonably bland or boring to look at. Which is why we have CSS that comes in adds style and color to our content, positioning it, and controlling what any of the HTML looks likes down to a fine scale.
+                        <br>An analogy for this would be baking for example - you have baked all the core structure for a pretty cool looking dragon cake (your HTML) but without frosting or decorations it's pretty plain and boring. So CSS would come in and the decorations and frosting to make it a lot more awesome to look at.<br>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            
+              <div class="container with-title is-rounded container-fluid">
+                  <h1 class="title">Explain control flow and loops using an example process from everyday life.</h1>
+                  <p ><br>Flow control in Javascript looks at a function and decides to do one thing(if), instead of another condition(else).<br>
+                        An example would be if you were thinking of going fishing the next day if the weather was fine; else you were going to chill at home and read a book or watch some Netflix.
+                        This would like:
+                       <br> - Wake up, check weather.<br>
+                       <br>- If weather fine = true<br>
+                        <br>- Then go fishing<br>
+                            <br>Else (weather fine = false)<br>
+                        <br>Stay at home and chill<br>
+                        
+                  </p>
+                </div>
+        
+              <div class="container is-rounded container-fluid float-right">
+                <p class="page-bg-color">
+                        Describe what the DOM is and an example of how you might interact with it:
+                        <br>The Document Object Model or DOM is an interface, and representation of HTML within a document (within a Window).
+                        This is usually displayed family-tree style, starting (keeping it simple for now) the head tag, which is referred to as a node.
+                        The head tag would have a few children made up of title, link, and style.
+                        Then you would have the html node, this would have children which would consist of the content on the page such p, a, img etc.<br>
+                        <br> An example of how you would interact with it is through the DevTools built into Chrome which lets see you view, interact with, and change the DOM. Any changes made are displayed on the page, but only locally - as soon as you refresh the original content will be back<br>
+                        
+                </p>
+              </div>
+
+              <div class="container with-title is-rounded container-fluid">
+                    <p class="title"> Explain the difference between accessing data from arrays and objects.</p>
+                    <p><br>Arrays store multiple types of the same information, such as strings “word”, numeric 1, boolean (true/false).<br>
+                            Now these are stored in order from 0 to 9 (or more), for example myArray = “learning”, “to”, “code”.
+                            If wanted to access the string “learning” in myArray it would be 0, so I would query myArray[0] which would give me “learning”
+                            Objects store similar data but are referenced differently to get the data; this is done by using myArray.property.
+                            <br>For example myArray = { <br>
+                                <br>Learning: “Is”,<br>
+                                <br>To: “sort of “,<br>
+                                <br>Code: “hard”,<br>
+                                <br>}<br>
+                            So if I wanted “learning” I would use myArray.Learning, which would return “Is”.</p>
+                </div>
+
+                <div class="container is-rounded container-fluid float-right">
+                    <p class="page-bg-color">
+                            Explain what functions are and why they are useful.
+                        <br>Functions are like the building blocks of Javascript, they are a set of statements that do anything from calculating, or multiplying numbers; to performing a task if a certain requirement is met.<br>
+                        <br>They are useful because they can delete, splice, or create new data depending on what has been in the statement, and can be used to make simple things like todo lists.<br>
+                    </p>
+                </div>
+          
+            </div>
+    </body>
+</html>
